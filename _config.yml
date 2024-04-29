@@ -7,12 +7,12 @@
 
 # Site Settings
 title                    : "Yizhou Chen"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
+description              : "Undergraduate student in the School of Electrical and Computer Engineering, Zhejiang University"
 repository               : "jasonchen505/jasonchen505.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+google_analytics_id      :  G-Q0HWZDG5N8 # get google_analytics_id from https://analytics.google.com/analytics/
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
