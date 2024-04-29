@@ -12,7 +12,7 @@ repository               : "jasonchen505/jasonchen505.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      :  G-Q0HWZDG5N8 # get google_analytics_id from https://analytics.google.com/analytics/
+google_analytics_id      :  OHWLWRIAAAAJ # get google_analytics_id from https://analytics.google.com/analytics/
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yizhou Chen"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : "Lorem ipsum College"
-  location         : "Beijing, China"
+  avatar           : "images/profile_photo.jpg"
+  bio              : "Zhejiang University"
+  location         : "Hangzhou, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "Lorem@ipsum.com"
+  googlescholar    : "https://scholar.google.com/citations?user=OHWLWRIAAAAJ"
+  email            : "jasonhuang404505@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :  "http://jasonchen505.github.io"
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "jasonchen505"# e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
