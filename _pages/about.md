@@ -26,7 +26,7 @@ I'm a junior year undergraduate from Zhejiang University, with a keen interest i
 
 ## Personalized Local Differentially Private Federated Learning with Adaptive Client Sampling
 **Yizhou Chen**\*, Wangjie Xu\*, Xincheng Wu\*, Meng Zhang, Bing Luo
--  [[ICASSP2024](https://ieeexplore.ieee.org/abstract/document/10447542)]
+-  [[ICASSP2024](https://ieeexplore.ieee.org/abstract/document/10447542)][[Paper](https://github.com/jasonchen505/AdaDPFedAvg/blob/main/icassp2024.pdf)]
 
 
 
