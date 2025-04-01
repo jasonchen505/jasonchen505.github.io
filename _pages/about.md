@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a senior year undergraduate from Zhejiang University, with a keen interest in Distributed ML, Trustworthy ML, and MM-LLM. My preferred research paradigm involves observing phenomena, proposing multiple explanations, constructing various theories, validating corollaries, and ultimately deriving solutions or methodologies. I'm eager to connect with anyone who shares this vision for AI or appreciates the same research approach.
+I'm a senior year undergraduate from Zhejiang University, with a keen interest in Distributed Learning, Trustworthy ML, Privacy-preserving ML, Optimization and MM-LLM. My preferred research paradigm involves observing phenomena, proposing multiple explanations, constructing various theories, validating corollaries, and ultimately deriving solutions or methodologies. I'm eager to connect with anyone who shares this vision for AI or appreciates the same research approach.
 
 
 
