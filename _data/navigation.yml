@@ -13,3 +13,6 @@ main:
 
   - title: "Open Source"
     url: "/#opensource"
+
+  - title: "Blog"
+    url: "/blog/"

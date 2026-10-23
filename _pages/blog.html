@@ -1,0 +1,20 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+author_profile: true
+description: Notes on research and engineering.
+---
+<h1>Blog</h1>
+{% if site.posts.size > 0 %}
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}" target="_self">{{ post.title | escape }}</a>
+    <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></small>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No posts yet.</p>
+{% endif %}
