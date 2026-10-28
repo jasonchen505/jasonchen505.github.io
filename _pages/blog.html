@@ -3,18 +3,23 @@ layout: default
 title: Blog
 permalink: /blog/
 author_profile: true
+blog_page: true
 description: Notes on research and engineering.
 ---
-<h1>Blog</h1>
-{% if site.posts.size > 0 %}
-<ul>
+<div class="blog-index">
+  <header class="blog-index-header">
+    <p class="blog-eyebrow">Research &amp; Engineering</p>
+    <h1>Blog</h1>
+    <p>Notes on ideas, methods, and implementation.</p>
+  </header>
   {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url | relative_url }}" target="_self">{{ post.title | escape }}</a>
-    <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></small>
-  </li>
+  <article class="blog-entry">
+    <time class="blog-meta" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+    <h2><a href="{{ post.url | relative_url }}" target="_self">{{ post.title | escape }}</a></h2>
+    {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
+    <a class="blog-read" href="{{ post.url | relative_url }}" target="_self">Read article <span aria-hidden="true">&rarr;</span></a>
+  </article>
+  {% else %}
+  <p>No posts yet.</p>
   {% endfor %}
-</ul>
-{% else %}
-<p>No posts yet.</p>
-{% endif %}
+</div>

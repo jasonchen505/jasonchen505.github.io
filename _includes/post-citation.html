@@ -1,0 +1,19 @@
+{% assign citation_origin = site.url | default: site.github.url | default: 'https://jasonchen505.github.io' %}
+{% assign citation_url = page.url | relative_url | prepend: citation_origin %}
+{% assign citation_author = page.citation_author | default: site.author.name %}
+<section class="blog-citation" aria-labelledby="cite-this-post">
+  <h2 id="cite-this-post">引用本文</h2>
+  <p class="blog-citation-intro">如需引用本文，可使用以下格式：</p>
+  <p class="blog-citation-text">{{ citation_author | escape }}. {{ page.title | escape }}. Blog, {{ page.date | date: "%Y-%m-%d" }}. <a href="{{ citation_url | escape }}">{{ citation_url | escape }}</a></p>
+  <details class="blog-citation-bibtex">
+    <summary>BibTeX</summary>
+    <pre><code>@misc{chen{{ page.date | date: "%Y" }}{{ page.slug | slugify | remove: '-' }},
+  author = { {{- citation_author | escape -}} },
+  title = { {{- page.title | replace: '&', '\\&' | escape -}} },
+  year = { {{- page.date | date: "%Y" -}} },
+  month = { {{- page.date | date: "%m" -}} },
+  howpublished = {Blog post},
+  url = { {{- citation_url | escape -}} }
+}</code></pre>
+  </details>
+</section>

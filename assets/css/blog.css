@@ -1,0 +1,83 @@
+/* Scoped to blog pages; the homepage keeps its existing appearance. */
+.blog-index, .blog-post {
+  --blog-ink: #243246;
+  --blog-muted: #68778b;
+  --blog-accent: #245ea8;
+  --blog-line: #e2e8f0;
+  max-width: 760px;
+  color: var(--blog-ink);
+  overflow-wrap: break-word;
+}
+.blog-eyebrow {
+  color: var(--blog-accent);
+  font-size: 0.65rem !important;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.blog-index-header { margin: 1rem 0 2.5rem; }
+.blog-index-header h1, .blog-post-header h1 {
+  margin: 0.35rem 0 1rem;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.blog-index h1::before, .blog-post h1::before { display: none; }
+.blog-index-header > p:last-child { color: var(--blog-muted); font-size: 0.85rem; }
+.blog-meta { color: var(--blog-muted); font-size: 0.7rem !important; letter-spacing: 0.02em; }
+.blog-meta span { margin: 0 0.45rem; }
+.blog-entry { padding: 1.6rem 0 1.8rem; border-top: 1px solid var(--blog-line); }
+.blog-entry h2 { margin: 0.5rem 0 0.7rem; font-size: 1.2rem; line-height: 1.6; }
+.blog-entry h2 a { color: var(--blog-ink); text-decoration: none; }
+.blog-entry h2 a:hover { color: var(--blog-accent); }
+.blog-entry > p { color: var(--blog-muted); font-size: 0.8rem; line-height: 1.85; }
+.blog-index .blog-read, .blog-post .blog-back, .blog-post-footer a {
+  color: var(--blog-accent);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+.blog-index .blog-read:hover, .blog-post .blog-back:hover, .blog-post-footer a:hover { text-decoration: underline; }
+.blog-post .blog-back { display: inline-block; margin: 0.5rem 0 1.8rem; }
+.blog-post-header { padding-bottom: 1.3rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--blog-line); }
+.blog-post-header .blog-meta { margin-bottom: 0; }
+.blog-toc { padding: 1rem 1.3rem; margin: 0 0 2rem; background: #f6f8fb; border: 1px solid var(--blog-line); border-radius: 8px; }
+.blog-toc summary { cursor: pointer; font-size: 0.8rem; font-weight: 600; }
+.blog-toc ol { list-style: none; margin: 0.7rem 0 0; padding: 0; }
+.blog-toc li { font-size: 0.75rem; line-height: 1.85; margin: 0.2rem 0; }
+.blog-toc a { text-decoration: none; color: var(--blog-muted); }
+.blog-toc a:hover { color: var(--blog-accent); }
+.blog-content { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; font-size: 17px; line-height: 1.95; }
+.blog-content p { margin: 0 0 1.3em; }
+.blog-content h2 { margin: 2.6em 0 1em; padding-top: 0.5em; border-top: 1px solid var(--blog-line); font-size: 1.25rem; line-height: 1.6; scroll-margin-top: 1rem; }
+.blog-content h3 { font-size: 1.05rem; line-height: 1.6; }
+.blog-content a { color: var(--blog-accent); text-underline-offset: 3px; }
+.blog-content pre { overflow-x: auto; padding: 1.1rem; border-radius: 6px; }
+.blog-content code { font-size: 0.88em; }
+.blog-content blockquote { margin-left: 0; padding-left: 1.2rem; border-left: 3px solid var(--blog-line); color: var(--blog-muted); }
+.blog-content .MathJax_Display, .blog-content .MJXc-display { overflow-x: auto; overflow-y: hidden; padding: 0.6rem 0; max-width: 100%; }
+.blog-content .MathJax { outline: none; }
+.blog-post-footer { margin: 3rem 0 1.5rem; padding-top: 1.3rem; border-top: 1px solid var(--blog-line); }
+.blog-index a:focus-visible, .blog-post a:focus-visible, .blog-toc summary:focus-visible { outline: 2px solid var(--blog-accent); outline-offset: 4px; }
+@media (max-width: 600px) {
+  .blog-post .blog-back { margin-bottom: 1.2rem; }
+  .blog-post-header h1 { font-size: 1.6rem; }
+  .blog-content { font-size: 16px; line-height: 1.9; }
+  .blog-toc { padding: 0.8rem 1rem; }
+}
+@media print {
+  .blog-back, .blog-toc, .blog-post-footer { display: none; }
+  .blog-content .MathJax_Display, .blog-content .MJXc-display { overflow: visible; }
+}
+
+/* Reusable citation footer, kept separate from the article's own headings. */
+.blog-citation { margin-top: 3rem; padding: 1.2rem 1.3rem; border: 1px solid var(--blog-line); border-radius: 8px; background: #f6f8fb; }
+.blog-citation h2 { margin: 0 0 0.65rem; font-size: 0.95rem; line-height: 1.5; }
+.blog-citation .blog-citation-intro { margin-bottom: 0.7rem; color: var(--blog-muted); font-size: 0.75rem; }
+.blog-citation .blog-citation-text { margin-bottom: 0.85rem; font-size: 0.75rem; line-height: 1.85; overflow-wrap: anywhere; }
+.blog-citation a { color: var(--blog-accent); }
+.blog-citation-bibtex summary { cursor: pointer; color: var(--blog-accent); font-size: 0.75rem; }
+.blog-citation-bibtex pre { max-width: 100%; margin: 0.8rem 0 0; padding: 1rem; overflow-x: auto; background: #fff; border: 1px solid var(--blog-line); border-radius: 5px; font-size: 12px; line-height: 1.7; tab-size: 2; }
+.blog-citation-bibtex code { white-space: pre; }
