@@ -81,3 +81,6 @@
 .blog-citation-bibtex summary { cursor: pointer; color: var(--blog-accent); font-size: 0.75rem; }
 .blog-citation-bibtex pre { max-width: 100%; margin: 0.8rem 0 0; padding: 1rem; overflow-x: auto; background: #fff; border: 1px solid var(--blog-line); border-radius: 5px; font-size: 12px; line-height: 1.7; tab-size: 2; }
 .blog-citation-bibtex code { white-space: pre; }
+
+/* Keep formula comparison tables within the article on narrow screens. */
+.blog-content table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
