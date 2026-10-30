@@ -43,6 +43,7 @@ I'm a master's student in Computer Science at Zhejiang University. I received my
 - **NVIDIA NeMo Molt** ([#197](https://github.com/NVIDIA-NeMo/labs-molt/pull/197)): Adapted DAPO and ProRL reward shaping for multi-turn agents.
 - **Tencent Hunyuan UniRL** ([#631](https://github.com/Tencent-Hunyuan/UniRL/pull/631)): Fixed vLLM-Omni rollout logprob handling.
 - **AgenticArXiv-RL** ([#113](https://github.com/Algorineko/AgenticArXiv-RL/pull/113), [#114](https://github.com/Algorineko/AgenticArXiv-RL/pull/114)): Fixed tool-result scoring and zero-variance reward classification in GRPO.
+- **NVIDIA NeMo ProRL-Agent-Server** ([#58](https://github.com/NVIDIA-NeMo/ProRL-Agent-Server/pull/58)): Fixed omitted-key reporting in truncated records.
 - **vLLM Speculators** ([#1200](https://github.com/vllm-project/speculators/pull/1200)): Improved vocabulary-mapping utility correctness.
 - **Alibaba InferSim** ([#20](https://github.com/alibaba/InferSim/pull/20)): Fixed attention MFU configuration for MLA prefill simulation.
 - **MLC-AI pith-train** ([#112](https://github.com/mlc-ai/pith-train/pull/112)): Clarified the limitations of FP8 memory estimates.
