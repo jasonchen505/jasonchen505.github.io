@@ -84,3 +84,6 @@
 
 /* Keep formula comparison tables within the article on narrow screens. */
 .blog-content table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* Long inline formulas scroll locally instead of widening a narrow paragraph. */
+.blog-content p > .MathJax_CHTML { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 0.15em 0; }
