@@ -47,3 +47,4 @@ I'm a master's student in Computer Science at Zhejiang University. I received my
 - **vLLM Speculators** ([#1200](https://github.com/vllm-project/speculators/pull/1200)): Improved vocabulary-mapping utility correctness.
 - **Alibaba InferSim** ([#20](https://github.com/alibaba/InferSim/pull/20)): Fixed attention MFU configuration for MLA prefill simulation.
 - **MLC-AI pith-train** ([#112](https://github.com/mlc-ai/pith-train/pull/112)): Clarified the limitations of FP8 memory estimates.
+- **REA** ([#2693](https://github.com/morluto/rea/pull/2693)): Preserved mcp doctor output format on argument errors.
